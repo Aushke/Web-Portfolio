@@ -1,0 +1,104 @@
+/*General Rules*/
+:root {
+    --clr-black:#22313f;
+    --clr-white: #e4f1fe;
+    --clr-sky: #8dc6ff;
+    --clr-blue: #34495e;
+}
+html {
+    background-color: var(--clr-black); 
+    font-family: Arial, Helvetica, sans-serif;
+
+}
+#general {
+    max-width: 1360px;
+    margin: 0 auto;
+}
+/*Navigation bar propieties*/
+#navbar {
+    position: sticky;
+    width: 100%;
+    padding: 2rem;
+    top: 0;
+    background-color: var(--clr-sky);
+
+
+}
+nav ul li{
+    display: inline-block;
+}
+nav ul li a{
+    text-decoration: none;
+}
+/*General grid propieties for sections*/
+.subsection{
+    min-width: 35vw;
+    /* Sub-section grid */
+    display: grid;
+    place-items: center;
+}
+/* Welcome section propieties */
+#welcome-section {
+    margin-top: 70px; /* navbar height */
+    height: calc(100vh - 70px);
+    background-color: var(--clr-black);
+    display: grid; /*grid propieties*/
+    grid-template-columns: repeat(2 1fr);
+    grid-template-areas: 
+    "welcome-a welcome-b" 
+    ;
+}
+#welcome-a {
+    grid-area: welcome-a;
+    background-color: var(--clr-sky);
+    
+}
+#welcome-b {
+    grid-area: welcome-b;
+    background-color:var(--clr-white);
+   
+}
+/* Second section propieties */
+#projects {
+    height: calc(100vh - 70px);
+    display: grid;
+    grid-template-columns: repeat(2 1fr);
+    grid-template-areas: 
+    "projects-a projects-b"
+    ;
+}
+#projects-a {
+    grid-area: projects-a;
+    background-color: var(--clr-white);
+    
+}
+#projects-b {
+    grid-area: projects-b;
+    background-color: var(--clr-sky);
+    
+}
+
+/* Final section propieties */
+#final-section {
+    height: calc(100vh - 70px);
+    background-color: var(--clr-black);
+    display: grid; /*grid propieties*/
+    grid-template-columns: repeat(2 1fr);
+    grid-template-areas: 
+    "final-a final-b" 
+}
+#final-a {
+    grid-area: final-a;
+    background-color: var(--clr-sky);
+    
+}
+#final-b {
+    grid-area: final-b;
+    background-color: var(--clr-white);
+}
+/*Footer section propieties*/
+footer {
+    height: 70px;
+    background-color: var(--clr-black);
+    color: var(--clr-white);
+}
